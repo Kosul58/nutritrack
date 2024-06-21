@@ -30,12 +30,42 @@ nav {
 
 .navbar-links-container a {
   text-decoration: none;
+  text-transform: capitalize;
+  padding: 0 10px;
   color: rgb(32, 31, 31);
   font-size: 1.2rem;
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.navbar-links-container a:hover {
+  color: #e70a0a;
+}
+
+.navbar-cart-icon a {
+  transition: color 0.3s;
+}
+
+.navbar-cart-icon:hover {
+  animation: text-animation 0.5s forwards;
+  color: #007bff;
+}
+
+@keyframes text-animation {
+  0% {
+    transform: scale(1);
+    letter-spacing: normal;
+  }
+  50% {
+    transform: scale(1.2);
+    letter-spacing: 2px;
+  }
+  100% {
+    transform: scale(1);
+    letter-spacing: normal;
+  }
 }
 
 .btnsmanager {
