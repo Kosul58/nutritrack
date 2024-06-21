@@ -10,7 +10,14 @@ const About = () => {
         <img src={AboutBackground} alt="" />
       </div>
       <div className="about-section-image-container">
-        <img src={AboutBackgroundImage} alt="" />
+        <div className="k1">
+          <div className="k11"></div>
+          <div className="k12"></div>
+        </div>
+        <div className="k1">
+          <div className="k12"></div>
+          <div className="k11"></div>
+        </div>
       </div>
       <div className="about-section-text-container">
         <h1 className="primary-heading">

@@ -1,14 +1,15 @@
-.home-image-section {
+.home-image-section img {
   max-width: 800px;
+  height: 500px;
 }
 
 .home-banner-container {
   position: relative;
   display: flex;
-  padding-top: 3rem;
 }
+
 .b112 {
-  margin-top: 8rem;
+  margin-top: 13rem;
 }
 .home-bannerImage-container {
   position: absolute;
