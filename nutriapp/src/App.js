@@ -1,4 +1,5 @@
 import "./App.css";
+import Navbar from "./Components/1Navbar";
 import Home from "./Components/2Home";
 import About from "./Components/3About";
 import Work from "./Components/44";
@@ -11,6 +12,7 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Home />
       <About />
       <Work />

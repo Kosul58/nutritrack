@@ -1,8 +1,62 @@
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbarr {
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 90px;
+  gap: 40px;
+}
+
+.navbar-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 800px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+  border-radius: 10px;
+}
+
+.navbar-links-container a {
+  text-decoration: none;
+  color: rgb(32, 31, 31);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btnsmanager {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.primary-button {
+  padding: 0.9rem 1.75rem;
+  width: 150px;
+  background-color: rgb(129, 224, 106);
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+  box-shadow: 0 4px 4px rgba(41, 49, 58, 0.2);
 }
 
 .primary-button:hover {
@@ -16,38 +70,24 @@ nav {
   display: none;
 }
 
-.navbar-links-container a {
-  margin-right: 3rem;
-  text-decoration: none;
-  color: rgb(32, 31, 31);
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.primary-button {
-  padding: 0.9rem 1.75rem;
-  background-color: rgb(129, 224, 106);
-  outline: none;
-  border: none;
-  border-radius: 5rem;
-  font-size: 1.1rem;
-  cursor: pointer;
-  font-weight: 600;
-  transition: 0.2s;
-  margin-left: 20px;
-}
-
-.btnsmanager {
+.searchcontent {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
 }
-.navbar-cart-icon {
-  font-size: 50px;
-  margin-bottom: -1rem;
+
+.search {
+  font-size: 16px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
+
 .nav-logo-container {
-  max-width: 240px;
+  max-width: 200px;
+}
+
+.navbar-cart-icon {
+  font-size: 30px;
 }
 
 @media (max-width: 1000px) {
