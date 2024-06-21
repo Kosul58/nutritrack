@@ -1,6 +1,9 @@
-.home-image-section img {
-  max-width: 800px;
-  height: 500px;
+.home-container {
+  height: 100vh;
+  margin-top: -11vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .home-banner-container {
@@ -8,20 +11,26 @@
   display: flex;
 }
 
-.b112 {
-  margin-top: 13rem;
-}
 .home-bannerImage-container {
   position: absolute;
-  top: -100px;
+  top: -310px;
   right: -170px;
   z-index: -2;
   max-width: 700px;
 }
 .home-image-section {
   max-width: 600px;
+  height: 600px;
   flex: 1;
+  display: flex;
+  align-items: flex-end;
 }
+
+.home-image-section img {
+  max-width: 800px;
+  height: 500px;
+}
+
 .home-text-section {
   flex: 1;
   display: flex;
@@ -29,6 +38,7 @@
   justify-content: center;
   align-items: flex-start;
 }
+
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
   color: #4c4c4c;
