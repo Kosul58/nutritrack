@@ -255,3 +255,34 @@ body {
     display: none;
   }
 }
+
+.am {
+  height: 100svh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.containerx {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100svh;
+}
+
+.aa {
+  background-color: rgb(155, 109, 109);
+}
+
+.bb {
+  background-color: rgb(116, 17, 17);
+}
+
+.cc {
+  background-color: rgb(211, 197, 9);
+}
+
+.dd {
+  background-color: rgb(15, 65, 158);
+}

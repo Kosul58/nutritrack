@@ -1,57 +1,46 @@
 import React, { useEffect } from "react";
 import { useState, useRef } from "react";
 
-import AboutBackground from "../Assets/about-background.png";
-import img1 from "../Assets/fc11.png";
-import img2 from "../Assets/workk.jpg";
-import img3 from "../Assets/fc3.png";
-import img4 from "../Assets/fc4.png";
-
 import img5 from "../Assets/infox11.png";
 import img6 from "../Assets/infox22.png";
 
 import "./44.css";
 
 const Work = () => {
+  const divToWatchRef = useRef(null); // Create a ref for the div to watch
+
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0]; // We only observe one element, so there will only be one entry
+        if (entry.isIntersecting && !hasScrolled) {
+          window.scrollBy({
+            top: 800, // Adjust the scroll amount as needed
+            behavior: "smooth",
+          });
+          setHasScrolled(true);
+        }
+      },
+      { threshold: 0.4 }
+    ); // Adjust threshold to 0.1 to trigger when at least 10% of the div is visible
+
+    if (divToWatchRef.current) {
+      observer.observe(divToWatchRef.current); // Observe the target div
+    }
+
+    return () => {
+      if (divToWatchRef.current) {
+        observer.unobserve(divToWatchRef.current); // Clean up observer when component unmounts or ref changes
+      }
+    };
+  }, [hasScrolled]);
+
   return (
     <>
-      <div className="about-section-container slide">
-        <div className="about-background-image-container">
-          <img src={AboutBackground} alt="" />
-        </div>
-        <div className="about-section-image-container">
-          <div className="k1">
-            <div className="k11 block">
-              <img src={img3} alt="" className="img3" />
-            </div>
-            <div className="k12 block">
-              <img src={img1} alt="" className="img1" />
-            </div>
-          </div>
-          <div className="k1">
-            <div className="k12 block">
-              <img src={img2} alt="" className="img2" />
-            </div>
-            <div className="k11 block">
-              <img src={img4} alt="" className="img4" />
-            </div>
-          </div>
-        </div>
-        <div className="about-section-text-container block">
-          <div className="a1">
-            <h1 className="about-heading animate-pop-in">
-              Food Is An Important Part Of A Balanced Diet
-            </h1>
-            <p className="about-text animate-pop-in">
-              Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-              elit. Dolor turpis molestie dui magnis facilisis at fringilla
-              quam.
-            </p>
-          </div>
-        </div>
-      </div>
       <div className="work-section-wrapper slide">
-        <div className="blackscarf"></div>
+        <div className="blackscarf" ref={divToWatchRef}></div>
         <div className="infox">
           <h1 className=" b113">You Are </h1>
           <div className="infoximg">
