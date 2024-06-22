@@ -31,16 +31,12 @@ const About = () => {
       </div>
       <div className="about-section-text-container">
         <div className="a1">
-          <h1 className="primary-heading">
+          <h1 className="about-heading">
             Food Is An Important Part Of A Balanced Diet
           </h1>
-          <p className="primary-text">
+          <p className="about-text">
             Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
             elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
-          </p>
-          <p className="primary-text">
-            Non tincidunt magna non et elit. Dolor turpis molestie dui magnis
-            facilisis at fringilla quam.
           </p>
         </div>
       </div>
