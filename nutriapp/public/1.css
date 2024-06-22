@@ -12,24 +12,24 @@
   scroll-snap-align: start;
 }
 
-.container {
+.containerx {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100svh;
 }
 
-.a {
+.aa {
   background-color: rgb(155, 109, 109);
 }
 
-.b {
+.bb {
   background-color: rgb(116, 17, 17);
 }
 
-.c {
+.cc {
   background-color: rgb(211, 197, 9);
 }
 
-.d {
+.dd {
   background-color: rgb(15, 65, 158);
 }
