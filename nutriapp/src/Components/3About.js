@@ -4,6 +4,8 @@ import img1 from "../Assets/fc11.png";
 import img2 from "../Assets/workk.jpg";
 import img3 from "../Assets/fc3.png";
 import img4 from "../Assets/fc4.png";
+import img5 from "../Assets/infox11.png";
+import img6 from "../Assets/infox22.png";
 
 const About = () => {
   return (

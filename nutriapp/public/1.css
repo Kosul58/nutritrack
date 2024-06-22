@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.am {
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100svh;
+}
+
+.a {
+  background-color: rgb(155, 109, 109);
+}
+
+.b {
+  background-color: rgb(116, 17, 17);
+}
+
+.c {
+  background-color: rgb(211, 197, 9);
+}
+
+.d {
+  background-color: rgb(15, 65, 158);
+}
