@@ -11,13 +11,13 @@ const Home = () => {
           <img src={BannerBackground} alt="" />
         </div>
         <div className="home-text-section b111">
-          <h1 className="primary-heading">
+          <h1 className="primary-heading animate-pop-in">
             Enjoy Healthy food in your daily life
           </h1>
-          <p className="primary-text">
+          <p className="primary-text animate-pop-in">
             Track what you eat, how much you eat and your weight.
           </p>
-          <button className="secondary-button">
+          <button className="secondary-button animate-pop-in">
             Calculate Now <FiArrowRight />{" "}
           </button>
         </div>

@@ -13,28 +13,28 @@ const About = () => {
       </div>
       <div className="about-section-image-container">
         <div className="k1">
-          <div className="k11">
+          <div className="k11 block">
             <img src={img3} alt="" className="img3" />
           </div>
-          <div className="k12">
+          <div className="k12 block">
             <img src={img1} alt="" className="img1" />
           </div>
         </div>
         <div className="k1">
-          <div className="k12">
+          <div className="k12 block">
             <img src={img2} alt="" className="img2" />
           </div>
-          <div className="k11">
+          <div className="k11 block">
             <img src={img4} alt="" className="img4" />
           </div>
         </div>
       </div>
-      <div className="about-section-text-container">
+      <div className="about-section-text-container block">
         <div className="a1">
-          <h1 className="about-heading">
+          <h1 className="about-heading animate-pop-in">
             Food Is An Important Part Of A Balanced Diet
           </h1>
-          <p className="about-text">
+          <p className="about-text animate-pop-in">
             Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
             elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
           </p>
