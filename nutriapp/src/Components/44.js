@@ -14,10 +14,10 @@ const Work = () => {
         </div>
       </div>
       <div className="infox">
-        <h1 className=" b113">What you eat </h1>
         <div className="infoximg">
           <img src={img2} alt="" />
         </div>
+        <h1 className=" b113">What you eat </h1>
       </div>
     </div>
   );

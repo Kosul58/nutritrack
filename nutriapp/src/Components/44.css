@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 2px solid rgb(0, 255, 34);
 }
 
 .b113 {
@@ -17,10 +18,12 @@
   color: #fff;
   text-align: left;
   margin: 50px 0px 0px 150px;
+  border: 2px solid rgb(7, 5, 5);
 }
 
 .infoximg {
   width: 800px;
   height: 90%;
   display: flex;
+  border: 2px solid rgb(7, 5, 5);
 }
