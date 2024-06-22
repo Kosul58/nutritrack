@@ -7,7 +7,7 @@ import img4 from "../Assets/fc4.png";
 
 const About = () => {
   return (
-    <div className="about-section-container">
+    <div className="about-section-container slide">
       <div className="about-background-image-container">
         <img src={AboutBackground} alt="" />
       </div>

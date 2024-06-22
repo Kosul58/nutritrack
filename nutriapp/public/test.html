@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Move Viewport to Second Div</title>
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <div id="div1" class="div">Div 1 - Scroll to see Div 2</div>
+    <div id="div2" class="div">
+      Div 2 - This div is moved to as soon as Div 1 is visible
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const div1 = document.getElementById("div1");
+        const div2 = document.getElementById("div2");
+
+        // Intersection Observer to detect when div1 is visible
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                // Add class to div2 to make it visible
+                div2.classList.add("visible");
+
+                // Scroll to div2
+                div2.scrollIntoView({ behavior: "smooth" });
+
+                // Stop observing once div1 is visible
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.5 }
+        ); // Trigger when half of div1 is visible
+
+        observer.observe(div1);
+      });
+    </script>
+  </body>
+</html>
