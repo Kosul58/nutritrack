@@ -1,8 +1,16 @@
 import React, { useEffect } from "react";
 import { useState, useRef } from "react";
 
-import img5 from "../Assets/infox11.png";
-import img6 from "../Assets/infox22.png";
+import imgf1 from "../Assets/burger.png";
+import imgf2 from "../Assets/roll.png";
+import imgf3 from "../Assets/fatman.png";
+import imgf4 from "../Assets/cake.png";
+import imgf5 from "../Assets/pizza.png";
+import imgf6 from "../Assets/fruit.png";
+import imgf7 from "../Assets/vegmix.png";
+import imgf8 from "../Assets/fitgirl.png";
+import imgf9 from "../Assets/salad.png";
+import imgf10 from "../Assets/fruitjuice.png";
 
 import "./44.css";
 
@@ -60,7 +68,7 @@ const Work = () => {
           setIsScrolled(true);
         }
       },
-      { threshold: 0.05 }
+      { threshold: 0.075 }
     ); // Adjust threshold to 0.1 to trigger when at least 10% of the div is visible
 
     if (window.scrollY > 850) {
@@ -108,10 +116,10 @@ const Work = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !isviewed2) {
-            textwatch2.current.classList.add("translate");
+            textwatch2.current.classList.add("translate2");
             isviewed2(true);
           } else {
-            textwatch2.current.classList.remove("translate");
+            textwatch2.current.classList.remove("translate2");
           }
         });
       },
@@ -135,18 +143,48 @@ const Work = () => {
         <div className="blackscarf" ref={divToWatchRef}></div>
         <div className="infox">
           <h1 className="b113" ref={textwatch}>
-            You Are{" "}
+            <p className="p101">You Are</p>{" "}
           </h1>
           <div className="infoximg block">
-            <img src={img5} alt="" />
+            <div className="d101">
+              <img src={imgf1}></img>
+            </div>
+            <div className="d102">
+              <img src={imgf2}></img>
+            </div>
+            <div className="d103">
+              <img src={imgf3}></img>
+            </div>
+            <div className="d104">
+              <img src={imgf4}></img>
+            </div>
+            <div className="d105">
+              <img src={imgf5}></img>
+            </div>
           </div>
         </div>
-        <div className="infox infox2" ref={divwatcher}>
+        <div className="infox2" ref={divwatcher}>
           <div className="infoximg block">
-            <img src={img6} alt="" />
+            <div className="d101">
+              <img src={imgf6}></img>
+            </div>
+            <div className="d102">
+              <img src={imgf7}></img>
+            </div>
+            <div className="d103">
+              <img src={imgf8}></img>
+            </div>
+            <div className="d104">
+              <img src={imgf9}></img>
+            </div>
+            <div className="d105">
+              <img src={imgf10}></img>
+            </div>
           </div>
           <h1 className="b113" ref={textwatch2}>
-            What you eat{" "}
+            <p className="p101">
+              What you <span className="texthighlight">Eat</span>
+            </p>{" "}
           </h1>
         </div>
       </div>
