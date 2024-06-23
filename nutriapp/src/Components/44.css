@@ -28,6 +28,45 @@
   animation-range: entry 0 cover 15%;
 }
 
+@keyframes abtext {
+  0% {
+    opacity: 0;
+    transform: translateX(1000px);
+    scale: 0.5;
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.block2 {
+  animation: abtext linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+@keyframes abtext2 {
+  from {
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.block3 {
+  animation: abtext2 ease-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
 .infox {
   height: 100svh;
   width: 100%;
@@ -39,6 +78,7 @@
 
 .infox2 {
   background-color: #161212;
+  height: 110svh;
 }
 .b113 {
   font-size: 50px;
@@ -55,3 +95,20 @@
 }
 
 /* text animation  */
+
+@keyframes translater {
+  from {
+    opacity: 0;
+    scale: 0.5;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    transform: translate(0px);
+  }
+}
+
+.b113.translate {
+  animation: translater 0.6s linear;
+}

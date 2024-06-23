@@ -9,24 +9,7 @@ import "./44.css";
 import "./55.css";
 
 const Work = () => {
-  return (
-    <>
-      <div class="containerx">
-        <div class="am as">
-          <h1>a</h1>
-        </div>
-        <div class="am bb">
-          <h1>b</h1>
-        </div>
-        <div class="am cc">
-          <h1>c</h1>
-        </div>
-        <div class="am dd">
-          <h1>d</h1>
-        </div>
-      </div>
-    </>
-  );
+  return <></>;
 };
 
 export default Work;

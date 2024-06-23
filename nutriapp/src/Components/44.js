@@ -9,9 +9,13 @@ import "./44.css";
 const Work = () => {
   const divToWatchRef = useRef(null); // Create a ref for the div to watch
   const divwatcher = useRef(null);
+  const textwatch = useRef(null);
+  const textwatch2 = useRef(null);
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
+  const [isviewed, setIsViewed] = useState(false);
+  const [isviewed2, setIsViewed2] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -33,7 +37,6 @@ const Work = () => {
     } else {
       setHasScrolled(false);
     }
-
     if (divToWatchRef.current) {
       observer.observe(divToWatchRef.current); // Observe the target div
     }
@@ -51,7 +54,7 @@ const Work = () => {
         const entry = entries[0]; // We only observe one element, so there will only be one entry
         if (entry.isIntersecting && !isScrolled) {
           window.scrollBy({
-            top: 860, // Adjust the scroll amount as needed
+            top: 800, // Adjust the scroll amount as needed
             behavior: "smooth",
           });
           setIsScrolled(true);
@@ -75,21 +78,76 @@ const Work = () => {
     };
   }, [isScrolled]);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0]; // We only observe one element, so there will only be one entry
+        if (entry.isIntersecting && !isviewed) {
+          textwatch.current.classList.add("translate");
+          isviewed(true);
+        } else {
+          textwatch.current.classList.remove("translate");
+        }
+      },
+      { threshold: 0.5 }
+    ); // Adjust threshold to 0.1 to trigger when at least 10% of the div is visible
+
+    if (textwatch.current) {
+      observer.observe(textwatch.current); // Observe the target div
+    }
+
+    return () => {
+      if (textwatch.current) {
+        observer.unobserve(textwatch.current); // Clean up observer when component unmounts or ref changes
+      }
+    };
+  }, [isviewed]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !isviewed2) {
+            textwatch2.current.classList.add("translate");
+            isviewed2(true);
+          } else {
+            textwatch2.current.classList.remove("translate");
+          }
+        });
+      },
+      { threshold: 0.5 }
+    ); // Adjust threshold to 0.1 to trigger when at least 10% of the div is visible
+
+    if (textwatch2.current) {
+      observer.observe(textwatch2.current); // Observe the target div
+    }
+
+    return () => {
+      if (textwatch2.current) {
+        observer.unobserve(textwatch2.current); // Clean up observer when component unmounts or ref changes
+      }
+    };
+  }, [isviewed2]);
+
   return (
     <>
       <div className="work-section-wrapper slide">
         <div className="blackscarf" ref={divToWatchRef}></div>
         <div className="infox">
-          <h1 className=" b113 ">You Are </h1>
-          <div className="infoximg">
+          <h1 className="b113" ref={textwatch}>
+            You Are{" "}
+          </h1>
+          <div className="infoximg block">
             <img src={img5} alt="" />
           </div>
         </div>
         <div className="infox infox2" ref={divwatcher}>
-          <div className="infoximg">
+          <div className="infoximg block">
             <img src={img6} alt="" />
           </div>
-          <h1 className="b113 ">What you eat </h1>
+          <h1 className="b113" ref={textwatch2}>
+            What you eat{" "}
+          </h1>
         </div>
       </div>
     </>
