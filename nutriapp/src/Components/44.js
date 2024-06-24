@@ -146,16 +146,16 @@ const Work = () => {
             <p className="p101">You Are</p>{" "}
           </h1>
           <div className="infoximg block">
-            <div className="d101">
+            <div className="d101 ">
               <img src={imgf1}></img>
             </div>
-            <div className="d102">
+            <div className="d102 ">
               <img src={imgf2}></img>
             </div>
-            <div className="d103">
+            <div className="d103 ">
               <img src={imgf3}></img>
             </div>
-            <div className="d104">
+            <div className="d104 ">
               <img src={imgf4}></img>
             </div>
             <div className="d105">
