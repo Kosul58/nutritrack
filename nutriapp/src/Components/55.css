@@ -1,6 +1,6 @@
 .infobox501 {
   width: 100svw;
-  height: 700svh;
+  height: 280svh;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -8,8 +8,13 @@
   width: 100%;
   display: flex;
   align-items: end;
-  border: 2px solid blue;
-  height: 100svh;
+  height: 80svh;
+}
+
+.textslider1 {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
 }
 
 .textbox5011 {
@@ -19,7 +24,6 @@
   flex-direction: column;
   width: 100%;
   height: 500px;
-  border: 2px solid blue;
   gap: 40px;
 }
 
@@ -44,51 +48,183 @@
 .imzoombox501 {
   position: absolute;
   width: 100svw;
-  height: 200svh;
-  border: 2px solid green;
+  height: 160svh;
+}
+
+.imzoombox502 {
+  width: 100svw;
+  height: 100svh;
+}
+
+.imzoombox503 {
+  width: 100svw;
+  height: 60svh;
 }
 
 .imzoombox5011 {
   position: absolute;
   top: 150px;
-  left: 150px;
+  left: 390px;
   width: 200px;
   height: 200px;
-  border: 2px solid green;
 }
 
 .imzoombox5012 {
   position: absolute;
   top: 150px;
-  right: 150px;
+  right: 390px;
   width: 200px;
   height: 200px;
-  border: 2px solid green;
 }
 
 .imzoombox5013 {
   position: absolute;
-  top: 20%;
-  left: 45%;
-  width: 200px;
-  height: 200px;
-  border: 2px solid green;
+  top: 250px;
+  left: 38%;
+  width: 350px;
+  height: 300px;
+  z-index: 5;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imzoombox5013 img {
+  width: 220px;
+  height: 220px;
+  z-index: 55;
+}
+
+.imzoombox5013 h2 {
+  position: absolute;
+  top: 120px;
+  right: 60px;
+  width: 50px;
+  height: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.barchart {
+  opacity: 0;
+  position: absolute;
+  top: 150px;
+  right: 5px;
+  width: 100px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: rgba(245, 239, 239, 0.4);
+  z-index: 2;
 }
 
 .imzoombox5014 {
   position: absolute;
-  top: 40%;
-  left: 150px;
+  top: 32%;
+  left: 390px;
   width: 200px;
   height: 200px;
-  border: 2px solid green;
 }
 
 .imzoombox5015 {
   position: absolute;
-  top: 40%;
-  right: 150px;
+  top: 32%;
+  right: 390px;
   width: 200px;
   height: 200px;
-  border: 2px solid green;
+}
+
+.infobox502 {
+  width: 100svw;
+  height: 600svh;
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 40svh;
+}
+
+@keyframes slidapear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.blocker {
+  animation: slidapear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 50%;
+}
+
+.infobox5021 {
+  width: 100svw;
+  height: 100svh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.infobox502textleft {
+  width: 30%;
+  height: 40%;
+  border-radius: 8px;
+  margin-left: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.infobox502textleft h2 {
+  width: 70%;
+  text-align: left;
+  font-size: 34px;
+  color: #ffffff;
+}
+
+.barchart2 {
+  width: 350px;
+  height: 220px;
+  background-color: rgba(245, 239, 239, 0.4);
+  border-radius: 24px;
+}
+
+.infobox502textright {
+  width: 30%;
+  height: 40%;
+  border-radius: 8px;
+  margin-right: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.infobox502textright h2 {
+  width: 70%;
+  text-align: left;
+  font-size: 34px;
+  color: #ffffff;
+}
+
+.infobox502img {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infobox502img img {
+  width: 700px;
+  height: 700px;
 }
