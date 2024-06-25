@@ -139,11 +139,12 @@
 
 .infobox502 {
   width: 100svw;
-  height: 600svh;
+  height: 560svh;
   background-color: rgba(0, 0, 0, 1);
   display: flex;
   flex-direction: column;
   gap: 40svh;
+  border: 2px solid blue;
 }
 
 @keyframes slidapear {
