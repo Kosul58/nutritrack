@@ -36,7 +36,7 @@ const Aii = () => {
   const intervalfn = () => {
     let i = 0,
       j = 1,
-      k = 1,
+      k,
       intervalid;
     intervalid = setInterval(() => {
       if (circleref.current) {

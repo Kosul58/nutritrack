@@ -22,12 +22,12 @@ const Work = () => {
         scrollTrigger: {
           trigger: ".imzoombox503",
 
-          start: "top 1000px",
+          start: "top 1200px",
           end: "top 200px",
           scrub: 1,
         },
         scale: 2.5,
-        translateY: 1200,
+        translateY: 1100,
         translateX: -1600,
         transitionDuration: 0.2,
         ease: "power2.in",
@@ -44,12 +44,12 @@ const Work = () => {
         scrollTrigger: {
           trigger: ".imzoombox503",
 
-          start: "top 1000px",
+          start: "top 1200px",
           end: "top 200px",
           scrub: 1,
         },
         scale: 2.5,
-        translateY: 1200,
+        translateY: 1100,
         translateX: 1600,
         opacity: 0,
         transitionDuration: 0.2,
@@ -66,12 +66,12 @@ const Work = () => {
         scrollTrigger: {
           trigger: ".imzoombox503",
 
-          start: "top 1000px",
+          start: "top 1200px",
           end: "top 400px",
           scrub: 1,
         },
         scale: 3.5,
-        translateY: 500,
+        translateY: 550,
         transitionDuration: 0.2,
         ease: "power2.in",
       });
