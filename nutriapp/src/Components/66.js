@@ -45,7 +45,7 @@ const Aii = () => {
     }, 3000);
   };
 
-  intervalfn();
+  // intervalfn();
 
   const intervalfn2 = (a) => {
     let i = 0,
@@ -76,7 +76,7 @@ const Aii = () => {
     }, 3000);
   };
 
-  intervalfn2(rectangleref);
+  // intervalfn2(rectangleref);
 
   const intervalfn3 = (a) => {
     let i = 1,
@@ -106,7 +106,22 @@ const Aii = () => {
     }, 3000);
   };
 
-  intervalfn3(controlref);
+  // intervalfn3(controlref);
+
+  const handleclick = (a) => {
+    console.log(a);
+    rectangleref.forEach((ref, index) => {
+      if (index !== a) {
+        ref.current.style.opacity = "0";
+      }
+    });
+
+    rectangleref[a].current.style.opacity = `1`;
+    rectangleref[a].current.style.transform = `translateX(-40px)`;
+    let j = a + 1;
+    j == 4 ? (j = 0) : (j = j);
+    circleref.current.style.rotate = `-${j * 90}deg`;
+  };
 
   return (
     <>
@@ -127,19 +142,35 @@ const Aii = () => {
             </div>
           </div>
           <div className="carousely">
-            <div ref={controlref1} className="asss">
+            <div
+              onClick={() => handleclick(3)}
+              ref={controlref1}
+              className="asss"
+            >
               <img src={img5} alt="" />
             </div>
 
-            <div ref={controlref2} className="asss">
+            <div
+              onClick={() => handleclick(0)}
+              ref={controlref2}
+              className="asss"
+            >
               <img src={img6} alt="" />
             </div>
 
-            <div ref={controlref3} className="asss">
+            <div
+              onClick={() => handleclick(1)}
+              ref={controlref3}
+              className="asss"
+            >
               <img src={img8} alt="" />
             </div>
 
-            <div ref={controlref4} className="asss">
+            <div
+              onClick={() => handleclick(2)}
+              ref={controlref4}
+              className="asss"
+            >
               <img src={img7} alt="" />
             </div>
           </div>
