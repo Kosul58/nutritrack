@@ -1,7 +1,6 @@
 .infobox501 {
   width: 100svw;
   height: 280svh;
-  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .textbox501 {
@@ -140,19 +139,19 @@
 .infobox502 {
   width: 100svw;
   height: 560svh;
-  background-color: rgba(0, 0, 0, 1);
   display: flex;
   flex-direction: column;
   gap: 40svh;
-  border: 2px solid blue;
 }
 
 @keyframes slidapear {
   from {
     opacity: 0;
+    scale: 0.5;
   }
   to {
     opacity: 1;
+    scale: 1;
   }
 }
 

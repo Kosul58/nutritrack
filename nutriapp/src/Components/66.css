@@ -1,10 +1,10 @@
 .containerx {
   width: 100svw;
   height: 100svh;
-  background-color: rgba(184, 153, 153, 1);
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .carouselcontainerx {
@@ -13,47 +13,119 @@
   background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(16px);
   border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(182, 16, 71, 0.2);
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
 }
 
 .carouselx {
-  width: 28rem;
-  height: 28rem;
-  border: 2rem solid#d6743c;
+  width: 38rem;
+  height: 38rem;
+  position: absolute;
   border-radius: 100%;
-  transition: rotate 1s;
+  top: -300px;
+  left: -300px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: rotate(135deg);
+  transition: rotate 1s;
+  border: 40px solid rgba(204, 83, 12, 0.5);
 }
 
 .slidex {
-  width: 10rem;
+  width: 22rem;
   position: absolute;
-  border: 2px solid red;
 }
 
 .slidex:nth-child(1) {
-  top: 40px;
+  top: -200px;
 }
 
 .slidex:nth-child(2) {
-  left: 340px;
+  left: 400px;
 }
 
 .slidex:nth-child(3) {
-  right: 340px;
+  right: 400px;
 }
 
 .slidex:nth-child(4) {
-  bottom: 40px;
+  bottom: -200px;
 }
 
 .slidex img {
   width: 100%;
   object-fit: cover;
+}
+
+.carousely {
+  position: absolute;
+  bottom: 10px;
+  width: 70%;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.carousely .asss {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100% 100% 100% 100%;
+  cursor: pointer;
+}
+
+.carousely .active {
+  background-color: rgba(247, 239, 239, 0.5);
+  box-shadow: 0 0 20px 20px rgba(129, 120, 138, 0.2);
+}
+
+.carousely .asss:hover {
+  background-color: rgba(138, 12, 12, 0.3);
+  box-shadow: 0 0 20px 20px rgba(129, 120, 138, 0.2);
+}
+
+.carousely .asss img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.carouselz {
+  position: absolute;
+  top: 160px;
+  right: 50px;
+  width: 440px;
+  height: 240px;
+  border-radius: 20px;
+  box-shadow: 0 0 8px 8px rgba(129, 120, 138, 0.2);
+}
+.z1 {
+  background-color: rgb(236, 236, 236);
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+}
+.z2 {
+  background-color: rgb(190, 226, 59);
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+}
+.z3 {
+  background-color: rgb(14, 211, 145);
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+}
+
+.z4 {
+  background-color: rgb(41, 44, 42);
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
 }
