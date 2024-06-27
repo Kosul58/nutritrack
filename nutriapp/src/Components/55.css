@@ -138,10 +138,10 @@
 
 .infobox502 {
   width: 100svw;
-  height: 560svh;
+  height: 480svh;
   display: flex;
   flex-direction: column;
-  gap: 40svh;
+  gap: 20svh;
 }
 
 @keyframes slidapear {

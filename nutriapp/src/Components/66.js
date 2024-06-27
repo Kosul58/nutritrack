@@ -45,7 +45,7 @@ const Aii = () => {
     }, 3000);
   };
 
-  // intervalfn();
+  intervalfn();
 
   const intervalfn2 = (a) => {
     let i = 0,
@@ -53,13 +53,13 @@ const Aii = () => {
       intervalid;
     intervalid = setInterval(() => {
       let k;
-      if (i == 0) {
+      if (i === 0) {
         k = 3;
-      } else if (i == 1) {
+      } else if (i === 1) {
         k = 0;
-      } else if (i == 2) {
+      } else if (i === 2) {
         k = 1;
-      } else if (i == 3) {
+      } else if (i === 3) {
         k = 2;
       }
 
@@ -72,11 +72,11 @@ const Aii = () => {
       }
 
       i++;
-      i == 4 ? (i = 0) : (i = i);
+      i === 4 ? (i = 0) : (i = i);
     }, 3000);
   };
 
-  // intervalfn2(rectangleref);
+  intervalfn2(rectangleref);
 
   const intervalfn3 = (a) => {
     let i = 1,
@@ -106,7 +106,7 @@ const Aii = () => {
     }, 3000);
   };
 
-  // intervalfn3(controlref);
+  intervalfn3(controlref);
 
   const handleclick = (a) => {
     console.log(a);
