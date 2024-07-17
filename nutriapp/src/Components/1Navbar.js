@@ -16,8 +16,6 @@ import { IoIosHome } from "react-icons/io";
 import { FaInfoCircle } from "react-icons/fa";
 import { IoIosCall } from "react-icons/io";
 
-import "./Navbar.css";
-
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [

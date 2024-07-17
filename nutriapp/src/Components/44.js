@@ -12,8 +12,6 @@ import imgf8 from "../Assets/fitgirl.png";
 import imgf9 from "../Assets/salad.png";
 import imgf10 from "../Assets/fruitjuice.png";
 
-import "./44.css";
-
 const Work = () => {
   const divToWatchRef = useRef(null); // Create a ref for the div to watch
   const divwatcher = useRef(null);

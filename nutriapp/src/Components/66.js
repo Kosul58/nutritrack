@@ -42,7 +42,7 @@ const Aii = () => {
       if (circleref.current) {
         circleref.current.style.rotate = `-${++i * 90}deg`;
       }
-    }, 3000);
+    }, 7000);
   };
 
   intervalfn();
@@ -63,6 +63,12 @@ const Aii = () => {
         k = 2;
       }
 
+      rectangleref.forEach((ref, index) => {
+        if (index !== a) {
+          ref.current.style.opacity = "0";
+        }
+      });
+
       if (a[i].current) {
         if (a[k].current) {
           a[k].current.style.opacity = `0`;
@@ -73,7 +79,7 @@ const Aii = () => {
 
       i++;
       i === 4 ? (i = 0) : (i = i);
-    }, 3000);
+    }, 7000);
   };
 
   intervalfn2(rectangleref);
@@ -94,6 +100,12 @@ const Aii = () => {
         k = 2;
       }
 
+      controlref.forEach((ref, index) => {
+        if (index !== i) {
+          ref.current.classList.remove("active");
+        }
+      });
+
       if (a[i].current) {
         if (a[k].current) {
           a[k].current.classList.remove("active");
@@ -103,7 +115,7 @@ const Aii = () => {
 
       i++;
       i == 4 ? (i = 0) : (i = i);
-    }, 3000);
+    }, 7000);
   };
 
   intervalfn3(controlref);
@@ -118,9 +130,17 @@ const Aii = () => {
 
     rectangleref[a].current.style.opacity = `1`;
     rectangleref[a].current.style.transform = `translateX(-40px)`;
+
     let j = a + 1;
     j == 4 ? (j = 0) : (j = j);
     circleref.current.style.rotate = `-${j * 90}deg`;
+
+    controlref.forEach((ref, index) => {
+      if (index !== j) {
+        ref.current.classList.remove("active");
+      }
+    });
+    controlref[j].current.classList.add("active");
   };
 
   return (

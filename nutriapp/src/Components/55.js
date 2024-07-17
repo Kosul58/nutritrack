@@ -10,9 +10,6 @@ import img5 from "../Assets/vegmix.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import "./44.css";
-import "./55.css";
-
 gsap.registerPlugin(ScrollTrigger);
 
 const Work = () => {

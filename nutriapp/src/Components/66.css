@@ -126,6 +126,6 @@
 
 .z4 {
   background-color: rgb(41, 44, 42);
-  opacity: 0;
+  opacity: 1;
   transition: opacity 1s, transform 1s;
 }
