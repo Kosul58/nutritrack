@@ -925,6 +925,142 @@ nav {
 }
 
 /* 55js ends here */
+
+/* 66js starts here */
+.containerx {
+  width: 100svw;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carouselcontainerx {
+  width: 90%;
+  height: 85%;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(16px);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(182, 16, 71, 0.2);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.carouselx {
+  width: 38rem;
+  height: 38rem;
+  position: absolute;
+  border-radius: 100%;
+  top: -300px;
+  left: -300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(135deg);
+  transition: rotate 1s;
+  border: 40px solid rgba(204, 83, 12, 0.5);
+}
+
+.slidex {
+  width: 22rem;
+  position: absolute;
+}
+
+.slidex:nth-child(1) {
+  top: -200px;
+}
+
+.slidex:nth-child(2) {
+  left: 400px;
+}
+
+.slidex:nth-child(3) {
+  right: 400px;
+}
+
+.slidex:nth-child(4) {
+  bottom: -200px;
+}
+
+.slidex img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousely {
+  position: absolute;
+  bottom: 10px;
+  width: 70%;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.carousely .asss {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100% 100% 100% 100%;
+  cursor: pointer;
+}
+
+.carousely .active {
+  background-color: rgba(247, 239, 239, 0.5);
+  box-shadow: 0 0 20px 20px rgba(129, 120, 138, 0.2);
+}
+
+.carousely .asss:hover {
+  background-color: rgba(138, 12, 12, 0.3);
+  box-shadow: 0 0 20px 20px rgba(129, 120, 138, 0.2);
+}
+
+.carousely .asss img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.carouselz {
+  position: absolute;
+  top: 160px;
+  right: 50px;
+  width: 440px;
+  height: 240px;
+  border-radius: 20px;
+  box-shadow: 0 0 8px 8px rgba(129, 120, 138, 0.2);
+}
+.z1 {
+  background-color: rgb(236, 236, 236);
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+}
+.z2 {
+  background-color: rgb(190, 226, 59);
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+}
+.z3 {
+  background-color: rgb(14, 211, 145);
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+}
+
+.z4 {
+  background-color: rgb(41, 44, 42);
+  opacity: 1;
+  transition: opacity 1s, transform 1s;
+}
+
+/* 66js ends here */
+
 .contact-page-wrapper h1 {
   max-width: 900px !important;
 }
@@ -1035,12 +1171,6 @@ nav {
   scroll-snap-align: start;
 }
 
-.containerx {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100svh;
-}
-
 .aa {
   background-color: rgb(155, 109, 109);
 }
@@ -1056,3 +1186,130 @@ nav {
 .dd {
   background-color: rgb(15, 65, 158);
 }
+
+/* 88js starts here  */
+
+/* register page starts */
+.Loginsignup {
+  width: 100svw;
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+}
+
+.loginform {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(237, 241, 245, 0.4);
+  border-radius: 20px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 4px 12px rgba(182, 16, 71, 0.2);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.signup1 {
+  width: 50%;
+  height: 100%;
+
+  overflow: hidden;
+
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.signupbtn {
+  width: 150px;
+  height: 50px;
+
+  left: 45%;
+  bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f57575;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signupbtnfront {
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+}
+
+.signupbtnback {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.signupbtn:hover {
+  background-color: #e30505;
+}
+
+.signblock {
+  display: none;
+}
+
+.signup11 {
+  width: 450px;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.gendercheck {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.genderr {
+  width: 200px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.genderchoose {
+  width: 80px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(249, 17, 17, 0.4);
+  cursor: pointer;
+}
+
+.genderchoose:hover {
+  background-color: rgba(207, 101, 101, 0.4);
+}
+
+.gchecked {
+  border: 2px solid red;
+  background-color: #d40707;
+}
+
+/* register ends */
+
+/* 88js ends here */

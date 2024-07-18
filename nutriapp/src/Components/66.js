@@ -10,8 +10,6 @@ import img6 from "../Assets/control-img-2.png";
 import img7 from "../Assets/control-img-3.png";
 import img8 from "../Assets/control-img-4.png";
 
-import "./66.css";
-
 const Aii = () => {
   const circleref = useRef(null);
 

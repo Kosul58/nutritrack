@@ -8,6 +8,7 @@ import Workkk from "./Components/66";
 import Testimonial from "./Components/Testimonial";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import Workker from "./Components/88";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Work />
       <Workk />
       <Workkk />
+      <Workker />
       <Testimonial />
       <Contact />
       <Footer />
